@@ -9,6 +9,7 @@ public class Treadmill implements Obstacles{
 
     @Override
     public boolean acting(Participant participant) {
+        participant.run();
         if(length <= participant.getMaxLength()){
             System.out.println(participant.getName() + " смог пробежать");
             return true;

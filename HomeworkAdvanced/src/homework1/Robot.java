@@ -11,11 +11,11 @@ public class Robot implements Running, Jumping, Participant{
         this.name = name;
     }
 
-    public void jump(Obstacles obstacle) {
+    public void jump() {
         System.out.println(name + " прыгает");
     }
 
-    public void run(Obstacles obstacle) {
+    public void run() {
         System.out.println(name + " бежит");
     }
 

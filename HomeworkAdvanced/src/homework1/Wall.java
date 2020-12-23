@@ -9,6 +9,7 @@ public class Wall implements Obstacles{
 
     @Override
     public boolean acting(Participant participant) {
+        participant.jump();
         if(high <= participant.getMaxHigh()){
             System.out.println(participant.getName() + " смог перепрыгнуть");
             return true;

@@ -1,5 +1,5 @@
 package homework1;
 
 public interface Jumping {
-    void jump(Obstacles obstacle);
+    void jump();
 }
