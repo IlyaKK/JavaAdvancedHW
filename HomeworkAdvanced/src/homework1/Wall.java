@@ -1,16 +1,16 @@
 package homework1;
 
 public class Wall implements Obstacles{
-    private int high = 0;
+    private final int HIGH;
 
     public Wall(int high) {
-        this.high = high;
+        this.HIGH = high;
     }
 
     @Override
     public boolean acting(Participant participant) {
         participant.jump();
-        if(high <= participant.getMaxHigh()){
+        if(HIGH <= participant.getMaxHigh()){
             System.out.println(participant.getName() + " смог перепрыгнуть");
             return true;
         }else {

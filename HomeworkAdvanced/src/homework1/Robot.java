@@ -1,22 +1,22 @@
 package homework1;
 
-public class Robot implements Running, Jumping, Participant{
+public class Robot implements Participant{
     private final int maxLength;
     private final int maxHigh;
-    private String name;
+    private final String NAME;
 
     public Robot(String name, int maxLength, int maxHigh) {
         this.maxLength = maxLength;
         this.maxHigh = maxHigh;
-        this.name = name;
+        this.NAME = name;
     }
 
     public void jump() {
-        System.out.println(name + " прыгает");
+        System.out.println(NAME + " прыгает");
     }
 
     public void run() {
-        System.out.println(name + " бежит");
+        System.out.println(NAME + " бежит");
     }
 
     @Override
@@ -31,6 +31,6 @@ public class Robot implements Running, Jumping, Participant{
 
     @Override
     public String getName() {
-        return name;
+        return NAME;
     }
 }

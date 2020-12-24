@@ -1,6 +1,6 @@
 package homework1;
 
-public class Cat implements Running, Jumping, Participant{
+public class Cat implements Participant{
     private final int maxLength;
     private final int maxHigh;
     private String name;
