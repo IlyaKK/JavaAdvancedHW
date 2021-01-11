@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
     public static final int SIZE = 4;
     public static void main(String[] args) {
-        String[][] massive = new String[SIZE][5];
+        String[][] massive = new String[SIZE][SIZE];
         for(int i = 0; i < massive.length; i++){
             Arrays.fill(massive[i], String.valueOf(i));
         }

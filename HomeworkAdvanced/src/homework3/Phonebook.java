@@ -2,16 +2,17 @@ package homework3;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class Phonebook {
-    private HashMap<String, HashSet<String>> phonebook;
+    private HashMap<String, LinkedHashSet<String>> phonebook;
 
     public Phonebook() {
         this.phonebook = new HashMap<>();
     }
 
     public void add(String name, String phoneNew){
-        HashSet<String> phone = phonebook.getOrDefault(name, new HashSet<>());
+        LinkedHashSet<String> phone = phonebook.getOrDefault(name, new LinkedHashSet<>());
         phone.add(phoneNew);
         phonebook.put(name, phone);
     }
