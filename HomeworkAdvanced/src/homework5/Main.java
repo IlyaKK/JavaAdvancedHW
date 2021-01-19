@@ -13,7 +13,7 @@ public class Main {
         MassiveWork massiveWork = new MassiveWork();
 
         long a = System.currentTimeMillis();
-        massiveWork.calculate(arr);
+        System.arraycopy(massiveWork.calculate(arr), 0, arr, 0, arr.length);
         System.out.println("Время работы в одном потоке " + (System.currentTimeMillis() - a));
 
         Arrays.fill(arr, 1f);
